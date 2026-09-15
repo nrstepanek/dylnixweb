@@ -1,0 +1,22 @@
+{
+  "name": "dylnixweb",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "deploy": "wrangler deploy",
+    "dev": "wrangler pages dev public",
+    "start": "wrangler pages dev public",
+    "test": "vitest",
+    "cf-typegen": "wrangler types"
+  },
+  "dependencies": {
+    "@cloudflare/vitest-pool-workers": "^0.22.0",
+    "@cloudflare/workers-types": "^5.20260915.1",
+    "typescript": "^7.0.2",
+    "wrangler": "^4.131.2"
+  },
+  "allowScripts": {
+    "esbuild@0.28.1": true,
+    "workerd@1.20260911.1": true
+  }
+}
